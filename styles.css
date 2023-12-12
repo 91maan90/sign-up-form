@@ -1,4 +1,33 @@
+:root {}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+aside footer {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    font-size: smaller;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 6px;
+}
+
+footer a {
+    color: inherit;
+}
+
 .sidebar {
     background-image: url("assets/img/wesley-tingey-9-OCsKoyQlk-unsplash.jpg");
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main {
+    flex: 2;
 }
