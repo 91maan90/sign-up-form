@@ -9,7 +9,6 @@ body {
 
 aside footer {
     color: white;
-    text-align: center;
     margin-top: auto;
     font-size: smaller;
     background-color: rgba(0, 0, 0, 0.2);
@@ -27,6 +26,11 @@ footer a {
     display: flex;
     flex-direction: column;
     flex: 1;
+    text-align: center;
+}
+
+.logo {
+    font-size: 128px;
 }
 
 .main {
