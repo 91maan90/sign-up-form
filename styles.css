@@ -57,7 +57,9 @@ footer a {
     justify-content: center;
 }
 
-header, form, .login-create-section {
+header,
+form,
+.login-create-section {
     padding-inline: 48px;
 }
 
@@ -68,6 +70,21 @@ header {
 
 form {
     background-color: white;
+}
+
+form .row {
+    display: flex;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.row div {
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 button {
