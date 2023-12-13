@@ -52,6 +52,18 @@ footer a {
 .main {
     flex: 2;
     background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header, form, .login-create-section {
+    padding-inline: 48px;
+}
+
+header {
+    font-weight: bold;
+    font-size: x-large;
 }
 
 form {
