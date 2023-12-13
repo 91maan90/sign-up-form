@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-:root{
+:root {
     --background-color: #2ba2b6;
 }
 
@@ -51,6 +51,11 @@ footer a {
 
 .main {
     flex: 2;
+    background-color: #f9fafb;
+}
+
+form {
+    background-color: white;
 }
 
 button {
