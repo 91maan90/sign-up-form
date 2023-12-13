@@ -1,11 +1,15 @@
 @font-face {
     font-family: "printclearly";
     src:
-      url("assets/fonts/printclearly-ggp-webfont.woff2") format("woff2"),
-      url("assets/fonts/printclearly-ggp-webfont.woff") format("woff");
+        url("assets/fonts/printclearly-ggp-webfont.woff2") format("woff2"),
+        url("assets/fonts/printclearly-ggp-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+:root{
+    --background-color: #2ba2b6;
+}
 
 body {
     margin: 0;
@@ -29,7 +33,7 @@ footer a {
 .sidebar {
     background-image: url("assets/img/wesley-tingey-9-OCsKoyQlk-unsplash.jpg");
     background-size: cover;
-    background-color: #2ba2b6;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -47,4 +51,8 @@ footer a {
 
 .main {
     flex: 2;
+}
+
+button {
+    background-color: var(--background-color);
 }
