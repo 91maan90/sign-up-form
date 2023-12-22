@@ -89,6 +89,13 @@ form label {
     font-size: small;
 }
 
+form input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
 .row div {
     margin-right: 5rem;
     display: flex;
