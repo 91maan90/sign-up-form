@@ -87,6 +87,7 @@ form .row {
 form label {
     text-transform: uppercase;
     font-size: small;
+    letter-spacing: 1px;
 }
 
 form input {
