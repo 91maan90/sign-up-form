@@ -136,6 +136,11 @@ button:active {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+button:not(:active):hover {
+    background-color: #03c4e2;
+    box-shadow: 0px 3px 5px rgba(3, 196, 226, 0.4);
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
