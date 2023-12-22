@@ -125,6 +125,7 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
+    margin-block: 1rem;
 }
 
 a {
