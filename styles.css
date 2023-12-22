@@ -9,6 +9,9 @@
 
 :root {
     --main-color: #039cb3;
+    --main-color-dark: #026d7e;
+    --main-color-light: #03c4e2;
+    --main-color-light-opacity: #03c4e266;
 }
 
 body {
@@ -104,12 +107,12 @@ input {
 
 input:user-invalid,
 .error {
-    border-color: #e53935;
+    border-color: #e20303;
 }
 
 input:focus {
     outline: none;
-    border-color: blue;
+    border-color: var(--main-color-light);
 }
 
 .row div {
@@ -132,13 +135,13 @@ button {
 }
 
 button:active {
-    background-color: #026d7e;
+    background-color: var(--main-color-dark);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 button:not(:active):hover {
-    background-color: #03c4e2;
-    box-shadow: 0px 3px 5px rgba(3, 196, 226, 0.4);
+    background-color: var(--main-color-light);
+    box-shadow: 0px 3px 5px var(--main-color-light-opacity);
 }
 
 a {
