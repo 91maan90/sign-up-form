@@ -121,13 +121,14 @@ input:focus {
     border-color: var(--main-color-light);
 }
 
-.row div {
+.row>div {
     margin-right: 5rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 350px;
+    position: relative;
 }
 
 button {
@@ -155,4 +156,13 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color);
+}
+
+input:user-valid+.checkmark-indicator::after {
+    position: absolute;
+    right: -1.5rem;
+    top: 45%;
+    font-weight: bold;
+    content: ' ✓';
+    color: #03b503;
 }

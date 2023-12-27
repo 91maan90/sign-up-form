@@ -1,9 +1,9 @@
+// Add event listener to submit button
 document.getElementById('register-form').addEventListener('submit', validatePasswords);
 
-// Find all required input elements
-var requiredInputs = document.querySelectorAll('input[required]');
-requiredInputs.forEach(input => addRequiredIndicator(input));
-
+// Add elements to inputs
+var allInputs = document.querySelectorAll('input');
+allInputs.forEach(input => addInputElements(input));
 
 function validatePasswords(event) {
     // Prevent the default form submission
@@ -27,6 +27,19 @@ function validatePasswords(event) {
         passwordInput.classList.add('error');
         confirmPasswordInput.classList.add('error');
     }
+}
+
+function addInputElements(input) {
+    if (input.required) {
+        addRequiredIndicator(input);
+    }
+
+    // Create the checkmark-indicator span element
+    var checkmarkIndicator = document.createElement('span');
+    checkmarkIndicator.className = 'checkmark-indicator';
+
+    // Insert the span after the input
+    input.insertAdjacentElement('afterend', checkmarkIndicator);
 }
 
 function addRequiredIndicator(input) {
