@@ -12,6 +12,7 @@
     --main-color-dark: #026d7e;
     --main-color-light: #03c4e2;
     --main-color-light-opacity: #03c4e266;
+    --error-color: #e23b03;
 }
 
 body {
@@ -89,7 +90,7 @@ form h2 {
 
 form .row {
     display: flex;
-    margin-top: 1rem;
+    flex-flow: wrap;
 }
 
 form label {
@@ -106,8 +107,13 @@ input {
 }
 
 input:user-invalid,
-.error {
-    border-color: #e23b03;
+.error,
+.required-indicator {
+    border-color: var(--error-color);
+}
+
+.required-indicator {
+    color: var(--error-color);
 }
 
 input:focus {
@@ -117,6 +123,7 @@ input:focus {
 
 .row div {
     margin-right: 5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     width: 100%;
