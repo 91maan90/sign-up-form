@@ -107,7 +107,7 @@ input {
 
 input:user-invalid,
 .error {
-    border-color: #e20303;
+    border-color: #e23b03;
 }
 
 input:focus {
