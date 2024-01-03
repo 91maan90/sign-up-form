@@ -201,6 +201,10 @@ input:user-invalid+.checkmark-indicator::after {
         flex-direction: column;
     }
 
+    .sidebar {
+        flex: unset;
+    }
+
     .logo {
         margin: 0;
     }
