@@ -158,11 +158,34 @@ a {
     color: var(--main-color);
 }
 
-input:user-valid+.checkmark-indicator::after {
+input:user-valid:not(.error)+.checkmark-indicator::after {
     position: absolute;
     right: -1.5rem;
     top: 45%;
-    font-weight: bold;
-    content: ' ✓';
+    content: ' ✔';
     color: #03b503;
+}
+
+input:user-invalid+.checkmark-indicator::after {
+    position: absolute;
+    right: -1.5rem;
+    top: 45%;
+    content: ' ✘';
+    color: var(--error-color);
+}
+
+#password {
+    position: relative;
+}
+
+#pwd-error-msg {
+    display: none;
+    position: absolute;
+    bottom: -1.25em;
+    color: var(--error-color);
+    font-size: small;
+}
+
+#pwd-error-msg.error {
+    display: flex;
 }
