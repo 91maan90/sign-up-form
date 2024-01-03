@@ -147,7 +147,8 @@ button:active {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-button:not(:active):hover {
+button:not(:active):hover,
+button:not(:active):focus {
     background-color: var(--main-color-light);
     box-shadow: 0px 3px 5px var(--main-color-light-opacity);
 }
@@ -156,6 +157,11 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color);
+}
+
+a:focus,
+a:hover{
+    color: var(--main-color-light);
 }
 
 input:user-valid:not(.error)+.checkmark-indicator::after {
