@@ -51,6 +51,16 @@ footer a {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     letter-spacing: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+}
+
+.logo-text {
+    margin: 0px;
+    position: relative;
+    left: -14px;
 }
 
 .main {
@@ -160,7 +170,7 @@ a {
 }
 
 a:focus,
-a:hover{
+a:hover {
     color: var(--main-color-light);
 }
 
@@ -213,7 +223,7 @@ input:user-invalid+.checkmark-indicator::after {
         text-align: center;
     }
 
-    .row>div{
+    .row>div {
         margin-right: unset;
         max-width: unset;
     }
